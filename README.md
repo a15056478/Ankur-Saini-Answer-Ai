@@ -1,4 +1,4 @@
-# Answers Ai assignment
+# Answer Ai assignment
 
 A project created in flutter using Bloc supports mobile platforms i.e. IOS and Andorid.
 
