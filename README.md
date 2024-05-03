@@ -26,6 +26,14 @@ Go to project root and execute the following command in console to get the requi
 flutter pub get 
 ```
 
+**Step 3:**
+
+Go to project main.dart or run this command. Make sure you are connected to a simulator or a physical device.
+
+```
+flutter run 
+```
+
 ## Key
 
 * Get The Anthropic api Secutiry from the owner of the project and replace in .env file
