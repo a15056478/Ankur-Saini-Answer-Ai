@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "103861998924",
+    "project_id": "answers-ai",
+    "storage_bucket": "answers-ai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103861998924:android:95b10b017bdd4cfed8ebe9",
+        "android_client_info": {
+          "package_name": "com.example.answers_ai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103861998924-h8q2kod5atdu1sca0lg9tagj7rcdoqf8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.answers_ai",
+            "certificate_hash": "a5fb8919a047fc95c11b5cadd197bb2e6e95d8c6"
+          }
+        },
+        {
+          "client_id": "103861998924-bkvukm6hs3507tgrg37tc821m7ea7354.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY3DGaWyqHW9ivLvUyPdHolHF0VrzayXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103861998924-bkvukm6hs3507tgrg37tc821m7ea7354.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "103861998924-gs7m5orqm9u3o7vabtnjvk5u2a9boqmt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.answersAi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
