@@ -11,10 +11,14 @@ final class LoginUserInitial extends LoginUserState {
 
 class LoginVerficationSuccess extends LoginUserState {
   final bool loginUserResponse;
+  final UserInfo userInfo;
 
-  const LoginVerficationSuccess({required this.loginUserResponse});
+  const LoginVerficationSuccess({
+    required this.loginUserResponse,
+    required this.userInfo,
+  });
   @override
-  List<Object?> get props => [loginUserResponse];
+  List<Object?> get props => [loginUserResponse, userInfo];
 }
 
 class LoginVerficationPending extends LoginUserState {

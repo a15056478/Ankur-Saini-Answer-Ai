@@ -139,6 +139,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: const SizedBox(),
         backgroundColor: Colors.white,
         actions: <Widget>[
           PopupMenuButton<int>(

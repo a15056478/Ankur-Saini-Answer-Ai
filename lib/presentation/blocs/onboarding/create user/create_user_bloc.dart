@@ -1,3 +1,4 @@
+import 'package:answers_ai/model/user/user_model.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -14,8 +15,12 @@ class CreateUserBloc extends Bloc<CreateUserEvent, CreateUserState> {
       emit(CreateUserPending());
       final data = await createUser.call(event.params);
 
-      data.fold((l) => emit(CreateUserVerficationFailed(error: l.message)),
-          (r) => emit(CreateUserVerficationSuccess(response: r)));
+      data.fold(
+          (l) => emit(CreateUserVerficationFailed(error: l.message)),
+          (r) => emit(CreateUserVerficationSuccess(
+                response: r,
+                userInfo: event.params.userInfo,
+              )));
     });
   }
 }

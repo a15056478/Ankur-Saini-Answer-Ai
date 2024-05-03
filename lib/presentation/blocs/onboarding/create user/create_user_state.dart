@@ -11,10 +11,14 @@ final class CreateUserInitial extends CreateUserState {
 
 class CreateUserVerficationSuccess extends CreateUserState {
   final bool response;
+  final UserInfo userInfo;
 
-  const CreateUserVerficationSuccess({required this.response});
+  const CreateUserVerficationSuccess({
+    required this.response,
+    required this.userInfo,
+  });
   @override
-  List<Object?> get props => [response];
+  List<Object?> get props => [response, userInfo];
 }
 
 final class CreateUserPending extends CreateUserState {

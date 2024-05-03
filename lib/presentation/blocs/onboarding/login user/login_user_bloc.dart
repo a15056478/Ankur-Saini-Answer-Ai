@@ -1,5 +1,6 @@
 import 'package:answers_ai/data/usecase/onboarding/login_user.dart';
 import 'package:answers_ai/model/prams/login/login_user_params.dart';
+import 'package:answers_ai/model/user/user_model.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -13,8 +14,10 @@ class LoginUserBloc extends Bloc<LoginUserEvent, LoginUserState> {
       emit(const LoginVerficationPending());
       final data = await loginUser.call(event.params);
 
-      data.fold((l) => emit(LoginVerficationFailed(error: l.message)),
-          (r) => emit(LoginVerficationSuccess(loginUserResponse: r)));
+      data.fold(
+          (l) => emit(LoginVerficationFailed(error: l.message)),
+          (r) => emit(LoginVerficationSuccess(
+              loginUserResponse: r, userInfo: event.params.userInfo)));
     });
   }
 }
