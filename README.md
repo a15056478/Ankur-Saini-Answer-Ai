@@ -15,7 +15,7 @@ The project integrates anthropic AI within a clean architecture framework, lever
 Download or clone this repo by using the link below:
 
 ```
-https://github.com/a15056478/Ankur-Saini-AnswersAi-Flutter.git
+https://github.com/a15056478/Ankur-Saini-Flutter-AnswersAi.git
 ```
 
 **Step 2:**
